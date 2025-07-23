@@ -3,7 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flower</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Faugei Flower Shop</title>
   </head>
-  <body></body>
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header>
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <!-- Logo Section -->
+        <div class="flex items-center">
+          <img
+            src="../assets/logo.png"
+            alt="Faugei Flower Shop Logo"
+            class="w-22 h-22 object-contain"
+          />
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav>
+          <ul class="flex space-x-8">
+            <li>
+              <a
+                href="#"
+                class="text-gray-900 font-medium hover:text-orange-600 transition-colors"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-gray-500 hover:text-orange-600 transition-colors"
+                >Shop</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-gray-500 hover:text-orange-600 transition-colors"
+                >About us</a
+              >
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fas fa-shopping-cart text-gray-700 text-lg"></i>
+              <span class="text-gray-700 font-medium">Cart ($56)</span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Always Fresh Flowers Section -->
+      <section class="py-26">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Content Column -->
+            <div class="space-y-6">
+              <h1
+                class="text-5xl lg:text-6xl font-bold leading-tight"
+                style="font-family: 'Noto Serif', serif"
+              >
+                ALWAYS <span class="text-orange-500">FRESH</span><br />
+                <span class="text-orange-500">FLOWERS</span>
+              </h1>
+              <p
+                class="text-gray-600 text-lg leading-relaxed max-w-md"
+                style="font-family: 'Inter', sans-serif"
+              >
+                Indulge your senses with the beauty and fragrance of our fresh
+                flower shop. From classic roses to exotic blooms, we offer a
+                wide variety of fresh flowers that are perfect for any occasion.
+              </p>
+            </div>
+
+            <!-- Image Column -->
+            <div class="flex justify-center lg:justify-end">
+              <img
+                src="../assets/hero-flower.png"
+                alt="Beautiful flower bouquet"
+                class="w-full max-w-lg h-auto object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
