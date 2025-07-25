@@ -72,7 +72,7 @@
       <!-- Always Fresh Flowers Section -->
       <section class="py-26">
         <div class="max-w-7xl mx-auto px-6">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="flex flex-col-reverse lg:flex-row gap-12 justify-between">
             <!-- Content Column -->
             <div class="space-y-6">
               <h1
@@ -407,7 +407,7 @@
                 class="w-full h-auto object-cover shadow-lg"
               />
               <!-- Trusted Seller Badge -->
-              <div class="absolute -top-22 -right-22">
+              <div class="hidden md:block absolute -top-22 -right-22">
                 <img
                   src="./assets/trusted-badge.png"
                   alt="Trusted Seller Badge"
@@ -452,7 +452,7 @@
       </section>
 
       <!-- Latest Deals Section -->
-      <section class="py-16">
+      <section class="py-6">
         <div class="max-w-7xl mx-auto px-6">
           <!-- Section Header -->
           <div class="text-center mb-12">
@@ -585,16 +585,16 @@
           </h2>
 
           <!-- Email Subscription Form -->
-          <div class="flex flex-col sm:flex-row max-w-4xl mx-auto">
+          <div class="flex w-full max-w-4xl mx-auto px-4">
             <input
               type="email"
               placeholder="Write email"
-              class="flex-1 px-6 py-4 bg-white text-gray-800 text-lg focus:outline-none border-0 sm:rounded-l-none sm:rounded-r-none"
+              class="w-3/4 sm:flex-1 flex-1 px-4 py-4 bg-white text-gray-800 text-lg focus:outline-none border-0 sm:rounded-r-none"
               style="font-family: 'Inter', sans-serif"
             />
             <button
               type="submit"
-              class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 transition-colors whitespace-nowrap border-0"
+              class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-4 py-4 transition-colors border-0"
               style="font-family: 'Inter', sans-serif"
             >
               Subscribe
@@ -627,7 +627,7 @@
           </div>
 
           <!-- Navigation Links Column 1 -->
-          <div class="ml-8 flex justify-end">
+          <div class="flex justify-start sm:justify-end">
             <ul class="space-y-4">
               <li>
                 <a
@@ -678,7 +678,7 @@
           </div>
 
           <!-- Navigation Links Column 2 -->
-          <div class="flex justify-end">
+          <div class="flex justify-start sm:justify-end">
             <ul class="space-y-4">
               <li>
                 <a
